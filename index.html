@@ -12,15 +12,16 @@
 
 <nav class="navbar">
             <a href="" class="logo">A.C.D.C.</a> 
-    
+        
         <div class="nav-links">
             <ul>
-                <li class="active"><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Notre Equipe</a></li>
-                <li><a href="#">Activités</a></li>
-                <li><a href="#"> Nos partenaires</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#home">Accueil</a></li>
+                <a name="home"></a>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#team">Notre Equipe</a></li>
+                <li><a href="#event">Activités</a></li>
+                <li><a href="#patners"> Nos partenaires</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>  
         </div>
         <img src="menu.png" alt="menu hamburger" class="menu-hamburger">
@@ -30,6 +31,7 @@
 </header>
 
 <!-- contenu de la section a la une -->
+
 <div class="topcontainer">
     <div class="top">
         <div class="left">
@@ -51,7 +53,8 @@
 
 <section class="hero">
     <div class="heading">
-        <h1>À propos de nous</h1>
+        <!-- <a name="about"></a> -->
+        <h1 id="about">À propos de nous</h1>
     </div>
     <div class="container">
         <div class="hero-content">
@@ -59,7 +62,7 @@
             <p>
                 Nous avons pour objet de répandre l'amour au travers des œuvres caritatives et humanitaires (aider les orphelins, les veuves, les pauvres, les démunis, les sans abris…), d'organiser des concerts gospel (des moments d'adoration et de louanges) et de soutenir et d'être à l'écoute de tous ceux qui sont abattus et désespérés.
             </p>
-            <button class="cta-button">En savoir plus</button>
+            <button class="cta-button"><a href="plus.html">En savoir plus</a></button>
         </div>
         <div class="hero-image">
             <img src="cover.jpeg" alt="image de couverture">
@@ -72,9 +75,9 @@
 
 <!-- section notre equipe -->
 
-<div class="team-container">
+<div class="team-container" id="team">
     <div class="title">
-         <h1>Notre Equipe</h1>
+         <h1 >Notre Equipe</h1>
     </div>
     <div class="main-team-container">
             <div class="sub_container">
@@ -101,8 +104,8 @@
 </div>
 
 <!-- section evenements --> 
-<div class="event-main">
-    <h1>Evenements</h1>
+<div class="event-main" id="event">
+    <h1>Activités</h1>
 
 <div class="event-container">
     
@@ -177,7 +180,7 @@
 
 <!-- section pour les contacts -->
 
-<div class="contact-section">
+<div class="contact-section" id="contact">
     <h1>Contacts</h1>
     <div class="contact-box">
         <div class="contacts">
@@ -185,7 +188,6 @@
                 <p>asso_corpsdechrist@outlook.fr</p>
                 <p>+33 6 44 99 67 01, +33 6 52 13 12 81</p>
             </div>
-        </div>
     
         <div class="follows">
             <div class="follow">
@@ -210,11 +212,12 @@
             </div> 
         </div>
     </div>
+    </div>
 </div>
 
 
 <!-- section pour le bas de page -->
-<footer>
+<footer class="footer">
     <div class="text">
         <h1>
             Adresse: 23 rue des frères montgolfier   |   51100 Reims
