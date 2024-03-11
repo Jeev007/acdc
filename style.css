@@ -1225,17 +1225,26 @@ span{
 
 @media screen and (max-width: 450px){
 
+header {
+}
+body {
+	margin: 0;
+	padding: 0 0;
+	margin-right: 0;
+	margin-left: 0;
+}
 
 /*section navbar*/
-.navbar{
-        padding: 0;
-    }
+.navbar {
+	background-color: whitesmoke;
+}
     .navbar .logo{
     position: absolute;
     top: 40px;
     left: 30px;
     font-size: 2em;
     font-weight: bold;
+    margin-top: -10px;
     }
     .navbar .menu-hamburger {
         display: block;
@@ -1247,7 +1256,7 @@ span{
         background-color: rgba(255,255, 255, 0.20);
         backdrop-filter: blur(8px);
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1257,40 +1266,77 @@ span{
     .nav-links.mobile-menu {
         margin-left: 0;
     }
-
     .nav-links ul {
-        
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .navbar .nav-links ul li{
-    margin: 25px 0px;
-    font-style: 1.2em;
+    margin: 10px 0px;
+    font-style: 1.5em;
 }
+
+/*section a la une*/
+
+.topcontainer{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-top: -30px;
+}
+.top {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: -100;
+	width: 100%;
+	height: auto;
+}
+.top .left{
+	margin: 0 0;
+	margin-top: 10px;
+}
+.top .right{
+	margin: 0 0;
+	margin-top: 10px;
+}
+.topcontainer .top p {
+	margin: 0;
+	font-size: 20px;
+}
+.top h1{
+	font-size: 35px;
+	line-height: 1;
+	margin: 10px 0;
+}
+.top h3 {
+	font-size: 10px;
+}
+
+
 /* a propos de nous */
 
+.hero {
+	width: 90%;
+	margin: 0;
+	padding: 0 0;
+
+}
 .hero .container {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 .hero .heading h1{	
 	margin-left: 20px;
 	font-size: 25px;
 	margin-bottom: 15px;
 }
-.container{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	margin-bottom: 10px;
-}
 .hero-content{
-	align-items: center;
-	justify-content: center;
-	max-width: 100%;
+	width: 100%;
 }
 .hero-content h2{
 	font-size: 20px;
@@ -1302,7 +1348,7 @@ span{
 	margin-top: 6px;
 	margin-right: 0px;
 	text-align: justify;
-	max-width:100% ;
+	width:100% ;
 }
 .hero-content button {
 	padding: 8px 14px;
@@ -1315,18 +1361,21 @@ span{
 	transform: scale(1.0);
 }
 .hero-image{
-	margin: 0 auto;
-	padding: 0 0;
-	margin-right: 20px;
-	margin-left: 20px;
 	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 .hero-image .description p {
 	font-size: 12px;
+	margin-left: 20px;
+	margin-top: 10px;
+	max-width: 90%;
+	text-align: justify;
 }
-img{
-	width: 100%;
-	height: auto;
+.hero-image img{
+	margin-left: 20px;
+	margin-right: 0;
 	border-radius: 10px;
 }
 
@@ -1393,7 +1442,6 @@ padding-right: 8px;
 	padding: 10px 10px;
 }
 
-
 /*galerie section*/
 
 .gal {
@@ -1411,8 +1459,6 @@ padding-right: 8px;
 	text-align: center;
 	line-height: 1;
 }
-
-}
 .gal .container-galerie{
 columns: 1;
 margin-left: 50px;
@@ -1420,9 +1466,6 @@ margin-right: 50px;
 	align-items: center;
 	justify-content: center;
 }
-
-
-
 .container-galerie .box{
 	width: 100%;
 	margin-bottom: 10px;
@@ -1431,7 +1474,6 @@ margin-right: 50px;
 	max-width: 100%;
 	border-radius: 10px;
 }
-
 .titre{
 	display: flex;
 	flex-direction: column;
@@ -1449,52 +1491,79 @@ margin-right: 50px;
 	margin: 20px 20px;
 }
 
-
-
-
-
-
 /*section contacts*/
 
 .contact-section{
 	width: 100%;
+	margin-bottom: 10px;
 }
 .contact-section h1 {
 	font-size: 25px;
 	margin-left: 20px;
 }
-.contacts {
-	width: 300px;
+.contact-section .contact-box{
 	display: flex;
 	flex-direction: column;
-	background-color: none;
-
+	flex: 0 0 0;
+	align-items: center;
+	justify-content: center;
+}
+.contacts {
+	width: 80%;
+	margin-left: 0;
+	margin-right: 0;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	max-width: 90%;
+	min-height: 90%;
+	margin-bottom: 0px;
 }
 .contact p{
-	font-size: 8px;
+	font-size: 15px;
 	line-height: 1.4;
 }
 /* Styles pour les icones reseaux */
-.follow {
-	width: 300px;
 
+.follows {
+	width: 80%;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: -15px;
 }
-.title2 h2 {
-	font-size: 12px;
+.follow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.title h2 {
+	font-size: 14px;
 	margin-bottom: 10px;
 }
 .follow .icons img {
-  	width: 25px;
+  	width: 30px;
 }
 
-
 /*footer*/
+.footer {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10;
+	margin-right: 0;
+}
 .footer .text h1 {
 	font-size: 12px;
 }
 .footer .text p {
-	font-size: 8px;
-	margin-top: -4px;
+	font-size: 10px;
 }
 }
 
@@ -1507,10 +1576,7 @@ margin-right: 50px;
 
 
 
-
-
-
-@media screen and (min-width: 310px) and (max-width: 350px){
+@media screen and (min-width: 300px) and (max-width: 395px){
 	.navbar {
 		padding: 0;
 		flex-direction: row;
@@ -1551,6 +1617,7 @@ margin-right: 50px;
 	.nav-links ul li {
 		margin: 25px 0;
 	}
+	
 }
 
 /*
