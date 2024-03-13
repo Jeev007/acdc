@@ -16,8 +16,6 @@ body {
 header {
 	height: 30vh ;
     width: 100vw;
-/*    background-image: url(landscape.jpeg);
-    background-size: cover;*/
 }
 .navbar {
     position: absolute;
@@ -35,16 +33,18 @@ header {
 .navbar a {
     color: #262626;
 }
-.navbar .logo{
-    font-size: 2em;
-    font-weight: bold;
+.navbar .logo img{
+	max-width: 150px;
+	height: auto;
+  /*  font-size: 2em;
+*//*    font-weight: bold;*/
 }
 
 .navbar .nav-links ul{
     display: flex;
 }
 .navbar .nav-links ul li{
-    margin: 0 25px;
+    margin: 0 20px;
 }
 .navbar .nav-links ul li.active a{
     color: red;
@@ -60,6 +60,7 @@ header {
 }
 
 /*section a la une*/
+
 .topcontainer{
 	margin-left: 50px;
 	margin-right: 50px;
@@ -95,7 +96,7 @@ header {
 }
 .top h1{
 	color: white;
-	font-size: 75px;
+	font-size: 70px;
 	line-height: 1;
 	margin: 10px 0;
 }
@@ -105,10 +106,11 @@ header {
 }
 
 /* styles pour la section À propos de nous*/
+
 .hero .heading h1{	
 	color: #262626;
 	margin-left: 50px;
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 20px;
 }
 .container{
@@ -126,7 +128,7 @@ header {
 }
 .hero-content h2{
 	color: #666;
-	font-size: 30px;
+	font-size: 26px;
 }
 .hero-content p{
 	margin: 0;
@@ -201,7 +203,7 @@ img{
 }
 .title h1{
 	color: #262626;
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 20px;
 }
 .main-team-container {
@@ -265,7 +267,7 @@ span{
 
 .event-main h1{
 	color: #262626;
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 20px;
 	margin-left: 50px;
 }
@@ -417,7 +419,7 @@ margin-right: 50px;
 }
 .contact-section h1 {
 	color: #262626;
-	font-size: 40px;
+	font-size: 30px;
 	margin-left: 50px;
 	margin-bottom: 20px;
 }
@@ -533,26 +535,254 @@ margin-right: 50px;
 
 
 /*responsive*/
+@media screen and (min-width: 1001px) and (max-width: 1100px){
+		/*section a la une */
+.topcontainer {
+	height: auto;
+}
+.topcontainer .top p {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+.top {
+	margin-top: -50px;
+}
+.top h1{
+	font-size: 38px;
+	line-height: 1;
+}
+.top h3 {
+	font-size: 23px;
+}
+.topimg img {
+	min-width: 70px;
+}
 
+/*section notre equipe*/
+.main-team-container {
+	width: 100%;
+	height: 320px;
+	gap: 30px;
+	padding: 10 10;
+	margin-bottom: 20px;
+}
+.main-team-container .sub_container{
+   width: 35%;
+   height: 210px;
+   margin-top: 40px;
+}
+h1{
+	margin: 8px 0;
+	font-size: 20px;
+}
+p{
+	font-size: 16px;
+	margin: 2px;
+	margin-inline: 8px;
+	line-height: 20px;
+}
+span{
+    font-size: 15px;
+    margin: 4px;
+}
+/*contacts and follow section*/
+
+.contacts {
+	width: 45%;
+	min-height: 120px;
+	margin-left: 80px;
+}
+.contact{
+	margin: 15px 15px;
+}
+.contact p{
+	font-size: 16px;
+	line-height: 1.4;
+}
+/* Styles pour les icones reseaux */
+.follows {
+	margin-right: 80px;
+	min-height: 120px;
+	margin-left: 10px;
+}
+.title2 h2 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.follow .icons img {
+	margin: 0 3px;
+	padding: 1px 1px;
+  	width: 36px;
+}
+
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 1000px){
+
+
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    color: #262626;
+    background-color: white;
+   /* position: fixed;*/
+    z-index: 10;
+}
+.navbar a {
+    color: #262626;
+}
+.navbar .logo img{
+	max-width: 150px;
+	height: auto;
+  /*  font-size: 2em;
+*//*    font-weight: bold;*/
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+.navbar .nav-links ul li{
+    font-size: 15px;
+}
+
+	/*section a la une */
+	
+.topcontainer {
+	height: auto;
+}
+.topcontainer .top p {
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+.top {
+	margin-top: -50px;
+}
+.top h1{
+	font-size: 28px;
+	line-height: 1;
+}
+.top h3 {
+	font-size: 20px;
+}
+.topimg img {
+	min-width: 70px;
+}
+
+/*section notre equipe*/
+.main-team-container {
+	width: 100%;
+	height: 320px;
+	gap: 30px;
+	padding: 10 10;
+	margin-bottom: 20px;
+}
+.main-team-container .sub_container{
+   width: 35%;
+   height: 210px;
+   margin-top: 40px;
+}
+h1{
+	margin: 8px 0;
+	font-size: 20px;
+}
+p{
+	font-size: 16px;
+	margin: 2px;
+	margin-inline: 8px;
+	line-height: 20px;
+}
+span{
+    font-size: 15px;
+    margin: 4px;
+}
+
+/*contacts and follow section*/
+
+.contacts {
+	width: 45%;
+	min-height: 120px;
+	margin-left: 80px;
+}
+
+.contact{
+	margin: 15px 15px;
+}
+.contact p{
+	font-size: 16px;
+	line-height: 1.4;
+}
+/* Styles pour les icones reseaux */
+.follows {
+	margin-right: 80px;
+	min-height: 120px;
+	margin-left: 10px;
+}
+.title2 h2 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.follow .icons img {
+	margin: 0 3px;
+	padding: 1px 1px;
+  	width: 36px;
+}
+}
 
 
 @media screen and (max-width:769px) {
 
-.navbar .menu-hamburger {
-	display: block;
-	width: 35px;
-	position: absolute;
-	top: 30px;
-	right: 30px;
+/*section navbar*/
+.navbar {
+	background-color: whitesmoke;
 }
-.nav-links {
-	display: none;
+    .navbar .logo{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: -10px;
+    }
+    .navbar .menu-hamburger {
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(29,18, 61, 0.30);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease ;
+    }
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li{
+    margin: 10px 0px;
+    font-style: 1.5em;
 }
 
-.mobile-menu{
-
+.navbar .nav-links ul li a{
+	color: white;
 }
-
 /*section a la une */
 .topcontainer {
 	height: auto;
@@ -585,8 +815,8 @@ margin-right: 50px;
 	min-width: 70px;
 }
 
-
 /*section a propos de nous*/
+
 .hero .heading h1 {
 	font-size: 30px;
 }
@@ -612,6 +842,7 @@ margin-right: 50px;
 }
 
 /*section notre equipe*/
+
 .title h1{
 	font-size: 30px;
 	margin-bottom: 20px;
@@ -726,7 +957,6 @@ padding-right: 8px;
 	min-height: 120px;
 	margin-left: 80px;
 }
-
 .contact{
 	margin: 15px 15px;
 }
@@ -762,16 +992,54 @@ padding-right: 8px;
 /*fin de reponsive pour une tablette 768px*/
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 749px) {
 
+
+/*section navbar*/
+.navbar {
+	background-color: whitesmoke;
+}
+    .navbar .logo{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: -10px;
+    }
+    .navbar .menu-hamburger {
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(29,18, 61, 0.30);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease ;
+    }
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li{
+    margin: 10px 0px;
+    font-style: 1.5em;
+}
+
+.navbar .nav-links ul li a{
+	color: white;
+}
 .top .left{
 	flex: 1 1 50%;
 	padding: 1em 1em 1em;
@@ -834,33 +1102,88 @@ span{
 }
 
 
-
 @media screen and (max-width: 649px){
+
+/*section navbar*/
+.navbar {
+	background-color: whitesmoke;
+}
+    .navbar .logo{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: -10px;
+    }
+    .navbar .menu-hamburger {
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(29,18, 61, 0.30);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease ;
+    }
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li{
+    margin: 10px 0px;
+    font-style: 1.5em;
+}
+
+.navbar .nav-links ul li a{
+	color: white;
+}
+.topcontainer{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-top: -30px;
+}
 .top {
-	padding: 0 0;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: -100;
+	width: 100%;
+	height: auto;
 }
 .top .left{
 	flex: 1 1 50%;
 	padding: 0.5em 0.5em 0.5em;
-	margin: 0 30px;
-	margin-top: 90px;
+	margin-top: 50px;
 }
 .top .right{
 	flex: 1 1 50%;
 	padding: 0.8em 0.8em 0.8em;
-	margin: 0 30px;
 	margin-top: 90px;
 }
 .top p {
-	font-size: 15px;
+	font-size: 20px;
 	margin-bottom: 8px;
 }
 .top h1{
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 1;
 }
 .top h3 {
-	font-size: 13px;
+	font-size: 15px;
 }
 .contact p{
 	font-size: 13px;
@@ -881,7 +1204,6 @@ span{
 	width: 100%;
 	margin-bottom: 10px;
 }
-
 .container .hero-content h2{
 	font-size: 15px;
 }
@@ -978,7 +1300,6 @@ padding-right: 8px;
 	min-height: 100px;
 	margin-left: 60px;
 }
-
 .contact p{
 	font-size: 13px;
 	line-height: 1.4;
@@ -998,12 +1319,56 @@ padding-right: 8px;
 	padding: 1px 1px;
   	width: 32px;
 }
-
 }
 
 /*a revoir le code de la section contacts*/
 @media screen and (max-width: 574px){
 
+/*section navbar*/
+.navbar {
+	background-color: whitesmoke;
+}
+    .navbar .logo{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: -10px;
+    }
+    .navbar .menu-hamburger {
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(29,18, 61, 0.30);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease ;
+    }
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li{
+    margin: 10px 0px;
+    font-style: 1.5em;
+}
+
+.navbar .nav-links ul li a{
+	color: white;
+}
 .contact-section  {
 
 }
@@ -1036,17 +1401,57 @@ padding-right: 8px;
 }
 
 
-
-
-
-
-
-
 @media screen and (max-width: 528px){
 
 body {
 	margin: 0;
 	padding: 0 0;
+}
+
+/*section navbar*/
+.navbar {
+	background-color: whitesmoke;
+}
+    .navbar .logo{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: -10px;
+    }
+    .navbar .menu-hamburger {
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(29,18, 61, 0.30);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease ;
+    }
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li{
+    margin: 10px 0px;
+    font-style: 1.5em;
+}
+
+.navbar .nav-links ul li a{
+	color: white;
 }
 .topcontainer{
 	display: flex;
@@ -1078,29 +1483,28 @@ body {
 	margin: 0;
 }
 .hero .heading h1{	
-	font-size: 30px;
+	font-size: 25px;
 	margin-bottom: 20px;
 }
 .hero .container{
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	justify-content: center;
 	width: 100%;
 	margin-bottom: 10px;
 }
-.hero-content{
+.hero .container .hero-content{
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
-.hero-content h2{
+.hero .container .hero-content h2{
 	color: #666;
-	font-size: 25px;
+	font-size: 15px;
 }
-.hero-content p{
+.hero .container .hero-content p{
 	margin: 0;
-	font-size: 25px;
+	font-size: 15px;
 	line-height: 1.2;
 	color: #666;
 	margin-top: 15px;
@@ -1108,27 +1512,30 @@ body {
 	text-align: justify;
 }
 .hero-content button{
-	padding: 12px 24px;
-	border-radius: 10px;
-	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 6px;
+	font-size: 16px;
 	transition: 0.3s ease;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 .hero-content button:hover{
 	transform: scale(1.1);
 	margin-left: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .hero-image{
 	margin: 0 auto;
 	padding: 0 0;
-	margin-top: 50px;
+	margin-top: 0px;
 	margin-right: 20px;
 	margin-left: 20px;
 }
 .hero-image .description p {
 	color: #262626;
-	font-size: 15px;
+	font-size: 11px;
+	width: 100%;
+	text-align: justify;
+	margin-top: 10px;
 }
 img{
 	width: 100%;
@@ -1147,6 +1554,7 @@ img{
 .title h1{
 	font-size: 25px;
 	margin-bottom: 20px;
+	margin-left: 30px;
 }
 .main-team-container {
 	width: 100%;
@@ -1196,7 +1604,6 @@ span{
 	min-height: 100px;
 	margin-left: 60px;
 }
-
 .contact p{
 	font-size: 13px;
 	line-height: 1.4;
@@ -1216,11 +1623,7 @@ span{
 	padding: 1px 1px;
   	width: 32px;
 }
-
 }
-
-
-
 
 
 @media screen and (max-width: 450px){
@@ -1253,7 +1656,7 @@ body {
         top: 0;
         left: 0;
         position: absolute;
-        background-color: rgba(255,255, 255, 0.20);
+        background-color: rgba(29,18, 61, 0.30);
         backdrop-filter: blur(8px);
         width: 100%;
         height: 80vh;
@@ -1274,6 +1677,10 @@ body {
     .navbar .nav-links ul li{
     margin: 10px 0px;
     font-style: 1.5em;
+}
+/*couleurs de la barre menu mobile.........................................................*/
+.navbar .nav-links ul li a{
+	color: white;
 }
 
 /*section a la une*/
@@ -1313,7 +1720,6 @@ body {
 .top h3 {
 	font-size: 10px;
 }
-
 
 /* a propos de nous */
 
@@ -1378,7 +1784,6 @@ body {
 	margin-right: 0;
 	border-radius: 10px;
 }
-
 
 /* styles pour la section evenements\activites */
 
@@ -1568,14 +1973,6 @@ margin-right: 50px;
 }
 
 
-
-
-
-
-
-
-
-
 @media screen and (min-width: 300px) and (max-width: 395px){
 	.navbar {
 		padding: 0;
@@ -1617,6 +2014,94 @@ margin-right: 50px;
 	.nav-links ul li {
 		margin: 25px 0;
 	}
+
+
+	/*section a la une*/
+
+.topcontainer{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-top: -30px;
+}
+.top {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: -100;
+	width: 100%;
+	height: auto;
+}
+.top .left{
+	margin: 0 0;
+	margin-top: 10px;
+}
+.top .right{
+	margin: 0 0;
+	margin-top: 10px;
+}
+.topcontainer .top p {
+	margin: 0;
+	font-size: 20px;
+}
+.top h1{
+	font-size: 30px;
+	line-height: 1;
+	margin: 10px 0;
+}
+.top h3 {
+	font-size: 10px;
+}
+
+
+/*section notre equipe*/
+
+.main-team-container .sub_container .content_infos h1{
+	margin: 8px 0;
+	font-size: 20px;
+}
+.main-team-container .sub_container .content_infos p{
+	font-size: 12px;
+	margin: 2px;
+	margin-inline: 8px;
+	line-height: 20px;
+}
+span{
+    font-size: 15px;
+    margin: 4px;
+}
+
+/*section contacts*/
+
+
+.contact p{
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.title h2 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+/*footer*/
+.footer {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10;
+	margin-right: 0;
+}
+.footer .text h1 {
+	font-size: 11px;
+}
+.footer .text p {
+	font-size: 8px;
+	margin-top: -5px;
+}
 	
 }
 
