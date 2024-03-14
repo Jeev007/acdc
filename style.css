@@ -621,7 +621,6 @@ span{
 @media screen and (min-width: 770px) and (max-width: 1000px){
 
 
-
 .navbar {
     position: absolute;
     padding: 50px;
@@ -684,9 +683,9 @@ span{
 	margin-bottom: 20px;
 }
 .main-team-container .sub_container{
-   width: 35%;
-   height: 210px;
-   margin-top: 40px;
+   	width: 35%;
+   	height: 210px;
+   	margin-top: 40px;
 }
 h1{
 	margin: 8px 0;
@@ -742,40 +741,41 @@ span{
 .navbar {
 	background-color: whitesmoke;
 }
-    .navbar .logo{
+.navbar .logo{
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: -10px;
+}
+.navbar .menu-hamburger {
+    display: block;
+    margin-top: -23px;
+}
+.nav-links{
+    top: 0;
+    left: 0;
     position: absolute;
-    top: 40px;
-    left: 30px;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: -10px;
-    }
-    .navbar .menu-hamburger {
-        display: block;
-    }
-    .nav-links{
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(29,18, 61, 0.30);
-        backdrop-filter: blur(8px);
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease ;
-    }
-    .nav-links.mobile-menu {
-        margin-left: 0;
-    }
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar .nav-links ul li{
+    background-color: rgba(29,18, 61, 0.30);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease ;
+}
+.nav-links.mobile-menu {
+    margin-left: 0;
+}
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar .nav-links ul li{
     margin: 10px 0px;
     font-style: 1.5em;
 }
@@ -892,7 +892,7 @@ span{
 	max-width: 550px;
 }
 .event-container h3.year {
-font-size: 30px;
+	font-size: 30px;
 }
 .event-container .event{
 	margin: 20px 0;
@@ -902,7 +902,7 @@ font-size: 30px;
 	padding: 6px 30px;
 }
 .event .event-left .date{
-font-size: 40px;
+	font-size: 40px;
 }
 .event .event-left .month{
 	font-size: 17px;
@@ -911,8 +911,8 @@ font-size: 40px;
 	padding: 0 14px;
 }
 .event .event-right h3.event-title {
-font-size: 20px;
-margin: 14px 0 6px 0;
+	font-size: 20px;
+	margin: 14px 0 6px 0;
 }
 .event .event-right .event-timing{
 	width: 120px;
@@ -928,7 +928,7 @@ margin: 14px 0 6px 0;
 	margin: 0 auto;
 }
 .event .event-right .event-timing img{
-padding-right: 8px;
+	padding-right: 8px;
 }
 .galerie {
 	margin: 15px 0;
@@ -999,42 +999,43 @@ padding-right: 8px;
 .navbar {
 	background-color: whitesmoke;
 }
-    .navbar .logo{
+.navbar .logo{
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: -10px;
+}
+.navbar .menu-hamburger {
+    display: block;
+    margin-top: -23px;
+}
+.nav-links{
+    top: 0;
+    left: 0;
     position: absolute;
-    top: 40px;
-    left: 30px;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: -10px;
-    }
-    .navbar .menu-hamburger {
-        display: block;
-    }
-    .nav-links{
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(29,18, 61, 0.30);
-        backdrop-filter: blur(8px);
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease ;
-    }
-    .nav-links.mobile-menu {
-        margin-left: 0;
-    }
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar .nav-links ul li{
-    margin: 10px 0px;
-    font-style: 1.5em;
+    background-color: rgba(29,18, 61, 0.30);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease ;
+}
+.nav-links.mobile-menu {
+    margin-left: 0;
+}
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar .nav-links ul li{
+	margin: 10px 0px;
+	font-style: 1.5em;
 }
 
 .navbar .nav-links ul li a{
@@ -1116,34 +1117,35 @@ span{
     font-weight: bold;
     margin-top: -10px;
     }
-    .navbar .menu-hamburger {
-        display: block;
-    }
-    .nav-links{
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(29,18, 61, 0.30);
-        backdrop-filter: blur(8px);
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease ;
-    }
-    .nav-links.mobile-menu {
-        margin-left: 0;
-    }
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar .nav-links ul li{
-    margin: 10px 0px;
-    font-style: 1.5em;
+.navbar .menu-hamburger {
+    display: block;
+    margin-top: -23px;
+}
+.nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(29,18, 61, 0.30);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease ;
+}
+.nav-links.mobile-menu {
+    margin-left: 0;
+}
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar .nav-links ul li{
+	margin: 10px 0px;
+	font-style: 1.5em;
 }
 
 .navbar .nav-links ul li a{
@@ -1337,31 +1339,32 @@ padding-right: 8px;
     margin-top: -10px;
     }
     .navbar .menu-hamburger {
-        display: block;
-    }
-    .nav-links{
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(29,18, 61, 0.30);
-        backdrop-filter: blur(8px);
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease ;
-    }
-    .nav-links.mobile-menu {
-        margin-left: 0;
-    }
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar .nav-links ul li{
+    display: block;
+    margin-top: -23px;
+}
+.nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(29,18, 61, 0.30);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease ;
+}
+.nav-links.mobile-menu {
+    margin-left: 0;
+}
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar .nav-links ul li{
     margin: 10px 0px;
     font-style: 1.5em;
 }
@@ -1412,7 +1415,7 @@ body {
 .navbar {
 	background-color: whitesmoke;
 }
-    .navbar .logo{
+.navbar .logo{
     position: absolute;
     top: 40px;
     left: 30px;
@@ -1420,34 +1423,35 @@ body {
     font-weight: bold;
     margin-top: -10px;
     }
-    .navbar .menu-hamburger {
-        display: block;
+.navbar .menu-hamburger {
+    display: block;
+    margin-top: -23px;
     }
-    .nav-links{
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(29,18, 61, 0.30);
-        backdrop-filter: blur(8px);
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease ;
-    }
-    .nav-links.mobile-menu {
-        margin-left: 0;
-    }
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar .nav-links ul li{
-    margin: 10px 0px;
-    font-style: 1.5em;
+.nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(29,18, 61, 0.30);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease ;
+}
+.nav-links.mobile-menu {
+    margin-left: 0;
+}
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar .nav-links ul li{
+margin: 10px 0px;
+font-style: 1.5em;
 }
 
 .navbar .nav-links ul li a{
@@ -1626,6 +1630,7 @@ span{
 }
 
 
+
 @media screen and (max-width: 450px){
 
 header {
@@ -1638,6 +1643,7 @@ body {
 }
 
 /*section navbar*/
+
 .navbar {
 	background-color: whitesmoke;
 }
@@ -1651,6 +1657,7 @@ body {
     }
     .navbar .menu-hamburger {
         display: block;
+        margin-top: -23px;
     }
     .nav-links{
         top: 0;
@@ -1785,6 +1792,26 @@ body {
 	border-radius: 10px;
 }
 
+/*notre equipe*/
+
+.team-container .title h1 {
+	margin-left: 0px;
+}
+.main-team-container .sub_container .content_infos h1{
+	margin: 8px 0;
+	font-size: 20px;
+}
+.main-team-container .sub_container .content_infos p{
+	font-size: 12px;
+	margin: 2px;
+	margin-inline: 8px;
+	line-height: 20px;
+}
+span{
+    font-size: 15px;
+    margin: 4px;
+}
+
 /* styles pour la section evenements\activites */
 
 .event-main h1{
@@ -1795,7 +1822,7 @@ body {
 	max-width: 320px;
 }
 .event-container h3.year {
-font-size: 20px;
+	font-size: 20px;
 }
 .event-container .event{
 	margin: 15px 0;
@@ -1805,7 +1832,7 @@ font-size: 20px;
 	padding: 4px 20px;
 }
 .event .event-left .date{
-font-size: 23px;
+	font-size: 23px;
 }
 .event .event-left .month{
 	font-size: 12px;
@@ -1815,8 +1842,8 @@ font-size: 23px;
 	min-width: 250px;
 }
 .event .event-right h3.event-title {
-font-size: 14px;
-margin: 10px 0 6px 0;
+	font-size: 14px;
+	margin: 10px 0 6px 0;
 }
 .event .event-right .event-timing{
 	width: 110px;
@@ -1830,11 +1857,10 @@ margin: 10px 0 6px 0;
 	font-weight: 440;
 }
 .event .event-right .event-timing img{
-padding-right: 8px;
+	padding-right: 8px;
 }
 .galerie {
 	margin: 5px 0;
-
 }
 .galerie a {
 	font-size: 11px;
@@ -1955,6 +1981,7 @@ margin-right: 50px;
 }
 
 /*footer*/
+
 .footer {
 	width: 100vw;
 	display: flex;
@@ -1979,10 +2006,11 @@ margin-right: 50px;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-
 	}
+
 	.navbar .menu-hamburger {
 		display: block;
+		margin-top:-23px ;
 		width: 35px;
 	}
 	.logo a {
@@ -2005,7 +2033,6 @@ margin-right: 50px;
 	.nav-links .mobile-menu {
 		margin-left: 0;
 	}
-	
 	.nav-links ul {
 		display: flex;
 		flex-direction: column;
@@ -2014,7 +2041,6 @@ margin-right: 50px;
 	.nav-links ul li {
 		margin: 25px 0;
 	}
-
 
 	/*section a la une*/
 
@@ -2053,7 +2079,6 @@ margin-right: 50px;
 .top h3 {
 	font-size: 10px;
 }
-
 
 /*section notre equipe*/
 
